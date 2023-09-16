@@ -1,1 +1,1 @@
-# static-voltage-stability-AI
+# Static voltage stability AI
