@@ -1,21 +1,23 @@
 # Static voltage stability AI
 
-Over the upcoming weeks, this webpage will receive new content. Following the successful completion of the Master's thesis defence, a revised edition of the thesis will be published here.
+This page will be updated in the coming weeks. After the successful defence of the Master's thesis, a revised edition of the thesis will be published here.
 
-## Install
+## Installation
 Please use Python version 3.9. Use pythonpackages_install.py to install the Python packages. This will ensure that all packages are compatible with the installed variants.
 
-## Load Flow calculation / static voltage stability evaluation
-There are 3 variants that are presented. Load flow calculation with PowerFactory, Netwon-Raphson and Gaus-Seidel. The programming was designed in such a way that the variants are in extra files that can be called up. As an example, code_comparison.py is shared. Multiprocessing was used.
+You will also need to install Nividea CuDa (GPU interface) and CuDNN (Deep Neural Network). Follow the instructions that are specific to the graphics card in use.
 
-The data generation is shown in main_powerfactory.py. It always generates 1000 cases. Since the memory prevents a fast calculation at higher runtimes, the program is called again by executer.py each time and the memory is cleared by the new call.
+## Load Flow Calculation / Static Stress Analysis
+3 variants are presented. Load flow calculation using PowerFactory, Netwon-Raphson and Gaus-Seidel. The programming has been designed so that the variants are in extra files that can be called. As an example, code_comparison.py is provided. Multiprocessing was used.
 
-The created Dataset with 789000 cases can be downloaded via this link ,as GitHub allowes only 25 MB without Git Large File Storage: https://www.dropbox.com/scl/fi/omuifzdu60k9sl3vl9lr3/updated_parquet_file.parquet?rlkey=yws01l5duxdkwjckreay0oqqb&dl=0
+The data generation is shown in main_powerfactory.py. It always generates 1000 cases. Since the memory prevents a fast computation at higher runtimes, the program is called again by executer.py each time and the memory is cleared by the new call.
 
-## KI
-For the AI, variant Vcon10Fc-2 was uploaded as an example. In the reduction of featues, only columns were removed and in another architecture of the AI, the number of neurons and activation function were changed. 
+The generated dataset with 789000 cases can be downloaded via this link, as GitHub only allows 25 MB without Git Large File Storage: https://www.dropbox.com/scl/fi/omuifzdu60k9sl3vl9lr3/updated_parquet_file.parquet?rlkey=yws01l5duxdkwjckreay0oqqb&dl=0
 
-Larger datasets were used for the scaling. These are shared as .csv.
+## AI
+For the AI, the variant Vcon10Fc-2 was uploaded as an example. In the feature reduction only columns were removed and in a different architecture of the AI the number of neurons and the activation function were changed. 
+
+Larger datasets were used for scaling. These are shared as .csv.
 
 ## Tools
-Tool for the extraction of the Y_Matrix from powerfactory. Currently without transformers.
+Tool to extract the Y_Matrix from powerfactory. Currently without transformers.
