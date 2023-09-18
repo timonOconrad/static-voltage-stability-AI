@@ -15,7 +15,7 @@ The created Dataset with 789000 cases can be downloaded via this link ,as GitHub
 ## KI
 For the AI, variant Vcon10Fc-2 was uploaded as an example. In the reduction of featues, only columns were removed and in another architecture of the AI, the number of neurons and activation function were changed. 
 
-Larger datasets were used for the scalign. These are shared as .csv.
+Larger datasets were used for the scaling. These are shared as .csv.
 
 ## Tools
 Tool for the extraction of the Y_Matrix from powerfactory. Currently without transformers.
