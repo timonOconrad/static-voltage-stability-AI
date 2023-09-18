@@ -10,5 +10,9 @@ There are 3 variants that are presented. Load flow calculation with PowerFactory
 
 The data generation is shown in main_powerfactory.py. It always generates 1000 cases. Since the memory prevents a fast calculation at higher runtimes, the program is called again by executer.py each time and the memory is cleared by the new call.
 
+The created Dataset with 789000 cases can be downloaded via this link ,as GitHub allowes only 25 MB without Git Large File Storage: https://www.dropbox.com/scl/fi/omuifzdu60k9sl3vl9lr3/updated_parquet_file.parquet?rlkey=yws01l5duxdkwjckreay0oqqb&dl=0
+
 ## KI
-Für die KI wuredn 3 beipsiele geteilt. Dies sind 
+For the AI, variant Vcon10Fc-2 was uploaded as an example. In the reduction of featues, only columns were removed and in another architecture of the AI, the number of neurons and activation function were changed. 
+
+Larger datasets were used for the scalign. These are shared as .csv.
