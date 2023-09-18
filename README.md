@@ -9,3 +9,6 @@ Please use Python version 3.9. Use pythonpackages_install.py to install the Pyth
 There are 3 variants that are presented. Load flow calculation with PowerFactory, Netwon-Raphson and Gaus-Seidel. The programming was designed in such a way that the variants are in extra files that can be called up. As an example, code_comparison.py is shared. Multiprocessing was used.
 
 The data generation is shown in main_powerfactory.py. It always generates 1000 cases. Since the memory prevents a fast calculation at higher runtimes, the program is called again by executer.py each time and the memory is cleared by the new call.
+
+## KI
+Für die KI wuredn 3 beipsiele geteilt. Dies sind 
