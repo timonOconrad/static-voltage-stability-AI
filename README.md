@@ -1,7 +1,4 @@
 # Static voltage stability AI
-
-This page will be updated in the coming weeks. After the successful defence of the Master's thesis, a revised edition of the thesis will be published here.
-
 ## Installation
 Please use Python version 3.9. Use pythonpackages_install.py to install the Python packages. This will ensure that all packages are compatible with the installed variants.
 
