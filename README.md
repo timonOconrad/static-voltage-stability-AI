@@ -4,7 +4,7 @@ Please use Python version 3.9. Use pythonpackages_install.py to install the Pyth
 
 You will also need to install Nividea CuDa (GPU interface) and CuDNN (Deep Neural Network). Follow the instructions that are specific to the graphics card in use.
 
-## Load Flow Calculation / Static Stress Analysis
+## Load Flow Calculation / Static Voltage Analysis
 3 variants are presented. Load flow calculation using PowerFactory, Netwon-Raphson and Gaus-Seidel. The programming has been designed so that the variants are in extra files that can be called. As an example, code_comparison.py is provided. Multiprocessing was used.
 
 The data generation is shown in main_powerfactory.py. It always generates 1000 cases. Since the memory prevents a fast computation at higher runtimes, the program is called again by executer.py each time and the memory is cleared by the new call.
